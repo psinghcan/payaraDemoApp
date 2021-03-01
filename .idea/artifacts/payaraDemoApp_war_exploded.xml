@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="payaraDemoApp:war exploded">
+    <output-path>$PROJECT_DIR$/target/payaraDemoApp</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>payaraDemoApp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="payaraDemoApp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:8.0" />
+          <element id="library" level="project" name="Maven: org.primefaces.themes:redmond:1.0.10" />
+          <element id="library" level="project" name="Maven: org.omnifaces:omnifaces:3.3" />
+          <element id="library" level="project" name="Maven: com.h2database:h2:1.4.200" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.18" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/payaraDemoApp/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="payaraDemoApp/web/Web" />
+    </root>
+  </artifact>
+</component>
